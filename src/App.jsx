@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const plants = [
   {
     id: "monstera",
@@ -8,7 +10,7 @@ const plants = [
     category: "Statement makers",
     description: "A bold, easygoing beauty with those iconic split leaves.",
     price: 34,
-    image: "/images/monstera.jpg",
+    image: `${baseUrl}images/monstera.jpg`,
     tag: "Bestseller",
   },
   {
@@ -17,7 +19,7 @@ const plants = [
     category: "Statement makers",
     description: "Glossy deep-green leaves bring a little drama to any room.",
     price: 42,
-    image: "/images/rubber-plant.jpg",
+    image: `${baseUrl}images/rubber-plant.jpg`,
   },
   {
     id: "bird-of-paradise",
@@ -25,7 +27,7 @@ const plants = [
     category: "Statement makers",
     description: "A little tropical sunshine, made for a bright corner.",
     price: 58,
-    image: "/images/bird-of-paradise.jpg",
+    image: `${baseUrl}images/bird-of-paradise.jpg`,
   },
   {
     id: "snake-plant",
@@ -33,7 +35,7 @@ const plants = [
     category: "Easy does it",
     description: "Sculptural, resilient, and happy in almost any light.",
     price: 26,
-    image: "/images/snake-plant.jpg",
+    image: `${baseUrl}images/snake-plant.jpg`,
     tag: "Low maintenance",
   },
   {
@@ -42,7 +44,7 @@ const plants = [
     category: "Easy does it",
     description: "Shiny leaves and a can-do spirit, even in low light.",
     price: 29,
-    image: "/images/zz-plant.jpg",
+    image: `${baseUrl}images/zz-plant.jpg`,
   },
   {
     id: "pothos",
@@ -50,7 +52,7 @@ const plants = [
     category: "Easy does it",
     description: "A trailing favourite that makes every shelf feel alive.",
     price: 18,
-    image: "/images/pothos.jpg",
+    image: `${baseUrl}images/pothos.jpg`,
   },
   {
     id: "calathea",
@@ -58,7 +60,7 @@ const plants = [
     category: "Little leafy loves",
     description: "Soft silver stripes and a quietly captivating presence.",
     price: 32,
-    image: "/images/calathea.jpg",
+    image: `${baseUrl}images/calathea.jpg`,
   },
   {
     id: "peperomia",
@@ -66,7 +68,7 @@ const plants = [
     category: "Little leafy loves",
     description: "Compact, cheerful leaves for desks and sunny windowsills.",
     price: 16,
-    image: "/images/peperomia.jpg",
+    image: `${baseUrl}images/peperomia.jpg`,
   },
   {
     id: "pilea",
@@ -74,7 +76,7 @@ const plants = [
     category: "Little leafy loves",
     description: "Round, bright leaves that bring good energy to your space.",
     price: 22,
-    image: "/images/pilea.jpg",
+    image: `${baseUrl}images/pilea.jpg`,
   },
 ];
 
